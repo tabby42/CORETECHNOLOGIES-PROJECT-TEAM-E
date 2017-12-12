@@ -11,12 +11,19 @@
     <body>
                 <!-- ============ COMMENT FOR PUSH ============== -->
 
-        <!-- ============ Start Navbar ============== -->
+                <!-- ============ Start Navbar ============== -->
         <nav>
             <img src="images/logo.png" alt="Logo">
-            <ul>
+            <ul class="dropdown">
                 <li><a href="about.html" title="About">About</a></li>
-                <li><a href="members.html" title="Members">Members</a></li>
+                <li class="dropbtn"><a href="#">Members</a>
+                    <div class="dropdown-content">
+                        <a href="#">Irene Theiss</a>
+                        <a href="#">Manuela Stepien</a>
+                        <a href="#">Sabri Moaz</a>
+                        <a href="#">Thomas Foller</a>
+                    </div>
+                </li>
                 <li><a href="contact.html" title="Contact">Contact</a></li> 
             </ul>
             <div  class="clear"></div>
@@ -26,10 +33,21 @@
         <main class="no-margin">
             <div class="col-50">
                <div>
-                    <h3>Contact</h5>
+                    <h3>Contact</h3>
                     <p>Kettenbrückengasse 23<br>
                         1050 Wien
                     </p>
+                   <form name="htmlform" method="post" action="php/html_form_send.php">
+                        <table id="contact-form" dir="rtl">
+                            <tr><td><input type="text" name="first_name" placeholder="FirstName *" maxlength="50" size="30" required></td></tr>
+                            <tr><td><input type="text" name="last_name" placeholder="LastName *" maxlength="50" size="30" required></td></tr>
+                            <tr><td><input type="email" name="email" placeholder="Email *" maxlength="80" size="30" required></td></tr>
+                            <tr><td><input type="text" name="telephone" placeholder="Tel" maxlength="30" size="30"><br></td></tr>
+                            <tr><td><textarea name="comments" placeholder="Messege *" maxlength="1000" cols="25" rows="6" required>
+                         </textarea></td></tr>
+                         <tr><td><input type="submit" value="Send"></td></tr>
+                         </table>
+                     </form>
                    
                </div>
             </div>
@@ -38,9 +56,10 @@
                     
                 </div>
             </div>
+            <div class="clear"></div>
         </main>
          <!-- ============ Start Footer ============== -->
-        <footer class="extrafooter">
+        <footer>
             <p>Copy :</p>
         </footer>
         <script src="js/script.js" type="text/javascript">

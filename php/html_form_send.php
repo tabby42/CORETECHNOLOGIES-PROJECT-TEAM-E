@@ -2,7 +2,7 @@
  header('Content-Type: text/html; charset=utf-8');
 if(isset($_POST['email'])) {
  
-    // قم بتعديل السطرين أدناه
+    // Your Eamil ....
     $email_to = "sabri@hotmail.com";
     $email_subject = "Email from :";
  
@@ -33,7 +33,7 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
 <?php
-    echo "<script type='text/javascript'>alert('شكرا لتواصلك، سيتم قراءة الرسالة والرد بأقرب وقت ممكن')</script>";
+    echo "<script type='text/javascript'>alert('Thank you for your message!')</script>";
     echo "<script> window.location.assign('../index.html'); </script>";
 ?> 
  
