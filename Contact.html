@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type="text"], input[type="email"], textarea {
+	background-color: white;
+	width: 80%;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	direction: rtl;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+ 
+textarea{
+	height: auto;
+}
+</style>
+<body>
+ 
+<form name="htmlform" method="post" action="php/html_form_send.php">
+	<table id="contact-form" dir="rtl">
+		<tr><td><input type="text" name="first_name" placeholder="firstName *" maxlength="50" size="30" required></td></tr>
+		<tr><td><input type="text" name="last_name" placeholder="lastName *" maxlength="50" size="30" required></td></tr>
+		<tr><td><input type="email" name="email" placeholder="Email *" maxlength="80" size="30" required></td></tr>
+		<tr><td><input type="text" name="telephone" placeholder="Tel" maxlength="30" size="30"><br></td></tr>
+		<tr><td><textarea name="comments" placeholder="Message*" maxlength="1000" cols="25" rows="6" required>
+	 </textarea></td></tr>
+	 <tr><td><input type="submit" value="ارسال"></td></tr>
+	 </table>
+ </form>
+
+
+</body>
+</html>
