@@ -8,6 +8,12 @@
     -webkit-box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .clear{
     clear: both
 }
@@ -19,7 +25,8 @@ body {
 
 /* ============== Start Navbar ================== */
 nav {
-    background-color: #347486
+    background-color: #347486;
+    width: 100%;
 }
 
 nav img {
@@ -115,6 +122,7 @@ header center {
 main {
     text-align: center;
     background-color: #eee
+    flex:1;
 }
 
 main h2 {
@@ -138,10 +146,23 @@ main .contianer article img{
 /* ============== Start main ================== */
 footer {
     background-color: #347486;
-    text-align: center
+    text-align: center;
+    margin-top: 0;
 }
 
 footer p {
     padding: 10px;
     color: #fff
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+.extrafooter {
+    position: absolute;
+    bottom:0;
+    width: 100%
 }
