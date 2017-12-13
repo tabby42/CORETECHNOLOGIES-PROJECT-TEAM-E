@@ -1,70 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Project E</title>
-        <link rel="stylesheet" type="text/css" href="css/projecte.css">
+        <!-- ------ Title ------ -->
         <meta charset="utf-8">
-
+        <title>Project E</title>
+        
+        <!-- ------ Style ------ -->
+        <link rel="stylesheet" type="text/css" href="css/projecteS.css">
+        
+        <!-- ------ Fonts ------ -->
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        
     </head>
     <body>
-                <!-- ============ Start Navbar ============== -->
+        
+        <!-- ============ Start Navbar ============== -->
         <nav>
-            <img src="images/logo.png" alt="Logo">
-            <ul class="dropdown">
-                <li><a href="about.html" title="About">About</a></li>
-                <li class="dropbtn"><a href="Memberssite.html">Members</a>
-                    <div class="dropdown-content">
-                        <a href="#">Irene Theiss</a>
-                        <a href="#">Manuela Stepien</a>
-                        <a href="#">Sabri Moaz</a>
-                        <a href="#">Thomas Foller</a>
-                    </div>
-                </li>
-                <li><a href="contact.html" title="Contact">Contact</a></li> 
-            </ul>
-            <div  class="clear"></div>
+            <div class="contianer">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                <ul class="dropdown">
+                    <li><a href="#about" title="About">About</a></li>
+                    <li class="dropbtn"><a href="#">Members</a>
+                        <div class="dropdown-content">
+                            <a href="Irene.html">Irene Theiss</a>
+                            <a href="Manuela.html">Manuela Stepien</a>
+                            <a href="Sabri.html">Sabri Moaz</a>
+                            <a href="Thomas.html">Thomas Foller</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact" title="Contact">Contact</a></li> 
+                </ul>
+                <div class="clear"></div>
+            </div>
         </nav>
 
          <!-- ============ Start Header ============== -->
         <header>
-            <center>E wie Erdbebensicher</center>
+            <div class="contianer overlay">
+                <p>E stands for </p><p id="typed">HI</p>
+            </div>
+            <div class="clear"></div>
         </header>
-
-         <!-- ============ Start main ============== -->
-        <main>
+        
+        <section class="team">
+            <div class="contianer">
             <h2>Our Team</h2>
+            <article><a href="Thomas.html">
+                    <img src="images/team-1.png" alt="Thomas Foller">
+                    <h3>Thomas Foller</h3>
+                    <p>Project Coordinator</p></a>
+                </article>
+                
+                <article><a href="Irene.html">
+                    <img src="images/team-2.png" alt="Irene Theiss">
+                    <h3>Irene Theiss</h3>
+                    <p>Developer</p></a>
+                </article>
+
+                <article><a href="Manuela.html">
+                    <img src="images/team-3.png" alt="Manuela Stepien">
+                    <h3>Manuela Stepien</h3>
+                    <p>Developer</p></a>
+                </article>
+
+                <article><a href="Sabri.html">
+                    <img src="images/x.png" alt="Sabri Moaz">
+                    <h3>Sabri Moaz</h3>
+                    <p>Developer</p></a>
+                </article>
+                </div>
+            <div class="clear"></div>
+        </section>
+        
+        
+        <!-- ============ Start About us ============== -->
+        <section id="about" class="about">
+            <div class="contianer">
+                <h2> There is always a plan E </h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+            </div>
+        </section>
+        
+        <!-- ============ Start Contact ============== -->
+        <section id="contact" class="contact">
             <div class="contianer">
                 <article>
-                    <img src="images/Users-Name-icon.png" alt="">
-                    <h3>Irene Theiss</h3>
-                    <p>Project Coordinator</p>
+                    <form name="htmlform" method="post" action="php/html_form_send.php">
+                        <table id="contact-form" dir="rtl">
+                            <tr><td><input type="text" name="first_name" placeholder="FirstName *" maxlength="50" size="30" required></td></tr>
+                            <tr><td><input type="text" name="last_name" placeholder="LastName *" maxlength="50" size="30" required></td></tr>
+                            <tr><td><input type="email" name="email" placeholder="Email *" maxlength="80" size="30" required></td></tr>
+                            <tr><td><input type="text" name="telephone" placeholder="Tel" maxlength="30" size="30"><br></td></tr>
+                            <tr><td><textarea name="comments" placeholder="Messege *" maxlength="1000" cols="25" rows="6" required>
+                         </textarea></td></tr>
+                         <tr><td><input class="button_form" type="submit" value="Send"></td></tr>
+                         </table>
+                    </form>
                 </article>
-
                 <article>
-                    <img src="images/Users-Name-icon.png" alt="">
-                    <h3>Manuela Stepien</h3>
-                    <p>Developer</p>		
+                    <address>
+                        Address: Kettenbrückengasse 23 1040 Wien<br>
+                        Tel: 066000000<br>
+                        E-mail: codefactory@codefactory.wien<br>
+                    </address>
                 </article>
-
                 <article>
-                    <img src="images/Users-Name-icon.png" alt="">
-                    <h3>Sabri Moaz</h3>
-                    <p>Developer</p>
-                </article>
-
-                <article>
-                    <img src="images/Users-Name-icon.png" alt="">
-                    <h3>Thomas Foller</h3>
-                    <p>Developer</p>
+                    <div id="map" style="width:100%;height:400px"></div>
                 </article>
             </div>
-        </main>
+            <div class="clear"></div>
+        </section>
 
-         <!-- ============ Start Footer ============== -->
+        <!-- ============ Start Footer ============== -->
         <footer>
-            <p>Copy :</p>
+            <p>&copy; copyright : CodeFactory &amp; Designer : Team E</p>
         </footer>
-            
+         
+        <script src="js/typed.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf2DXui2c737Qx4T0AZayMfUZl9pPg8pc&callback=myMap"></script>
     </body>
 </html>

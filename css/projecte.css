@@ -107,11 +107,12 @@ header {
     width:  100%;
 }
 
-header center {
+header p{
     color: #fff;
     font-size: 50px;
     padding-top:50px;
     font-weight: bold;
+    background-color: #000
 }
 
 

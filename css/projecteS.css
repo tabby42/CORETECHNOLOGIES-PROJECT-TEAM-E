@@ -1,0 +1,427 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.clear{
+    clear: both
+}
+
+.contianer {
+    width: 90%
+}
+
+.overlay {
+	background-color: rgba(000, 000, 000, .4);
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    background-color: #f5f7f8;
+    font-family: 'Muli', sans-serif
+}
+
+section {
+    margin: 100px 0
+}
+
+/* ============== Start Navbar ================== */
+nav {
+    background-color: #347486;
+    width: 100%;
+}
+
+nav img {
+    float: left;
+    width: 50px;
+    padding: 5px;  
+}
+
+
+/* ----- Ul ------
+----------------------------------*/
+nav ul {
+    list-style-type: none;
+    float: right
+}
+
+nav ul li  {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 2;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+
+/* ----- Hoverable Dropdown ------
+----------------------------------*/
+.dropbtn {
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #347486;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 28px
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 5px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #eee;color: #333}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #eee;
+    color: #347486
+}
+
+/* ============== Start Header ================== */
+header {
+    background-image: url(../images/designer-developer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    background-position: center;
+    width:  100%;
+    text-align: center;
+}
+
+header p{
+    line-height: 1;
+    color: #fff;
+    font-size: 80px;
+    padding-top:50px;
+    font-weight: bold;
+}
+
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 50px;
+    padding: 20px 0;
+    color: #347486
+}
+
+
+.team article{
+    float: left;
+    width: 25%
+}
+
+.team img{
+    width: 90%;
+    border: solid 10px #347486;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all .2s ease-in-out
+}.team img:hover {
+    transform: scaleY(1.1)scaleX(1.1)rotate(-10deg);
+    background-color: #347486
+}
+.team h3{
+    font-size: 30px;
+    padding: 10px 0;
+    color: #347486
+}
+.team p{
+    font-size: 20px;
+    padding: 10px 0
+}
+
+/* ============== Start contact ================== */
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 35px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #347486
+}
+
+.about p {
+    font-size: 22px;
+    color: #333
+}
+
+/* ============== Start contact ================== */
+.contact article {
+    float: left;
+    width: 33.333%;
+    text-align: center
+}
+
+.contact article address {
+    text-align: left;
+    line-height: 2;
+    color: #347486;
+    font-size: 18px
+}
+
+/* ----- Contact Form -------
+-----------------------------*/
+input[type="text"], input[type="email"], textarea {
+	background-color: white;
+	width: 80%;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	direction: ltr;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+ 
+textarea{
+	height: auto;
+}
+
+.button_form {
+    color: #fff;
+    width: 80%;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	padding: 0 20px;
+	font-size: 20px;
+	font-weight: bold;
+    background-color: #347486
+}
+
+
+/* ============== Start main ================== */
+footer {
+    background-color: #347486;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer p {
+    padding: 10px;
+    color: #fff
+}
+
+
+/* ============== Start site for Sabri ================== */
+.S {background-image: url(../images/Slider-4.jpg);background-size: cover;
+    background-attachment: fixed;
+    background-position: center;}
+.S nav {background-color: #333}
+.S section  {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.S .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.info {
+    float: left;
+    width: 35%;
+}
+
+.info img {
+    width: 80%;
+    margin: 50px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all .5s ease-in-out
+}.info img:hover{
+    opacity: 1
+}
+
+.info ul {
+    list-style-type: none
+}
+.info ul li {
+    display: inline-block;
+    padding: 20px 20px;
+    transition: all .2s ease-in-out
+}.info ul li:hover{
+    transform: scaleY(2)scaleX(2)rotate(-15deg);
+}
+
+
+.info ul li a {
+    color: #347486;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.info_x {
+    padding: 20px;
+}
+
+.info_x h4{
+    padding: 10px;
+    padding-left: 420px;
+    margin: 10px;
+    font-size: 25px;
+    color: #eee;
+    text-align: left;
+    line-height: 2
+}
+
+.box_skills_2  {
+	width: 80%;
+    height: 500px;
+	text-align: left;
+} 
+
+.box_skills_2 p {
+	color: #347486;
+}
+
+.box_skills_2 .skills {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  float: left;
+  padding-left: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: 10px 0
+}
+
+
+.box_skills_2 .html {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.box_skills_2 .html:hover{width: 95%;background-color: rgba(0,0,0,0.6);}
+
+.box_skills_2 .css {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.box_skills_2 .css:hover{width: 90%;background-color: rgba(0,0,0,0.6);}
+
+.Sabri .box_skills_2 .Bootstrap {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.Sabri .box_skills_2 .Bootstrap:hover{width: 85%;background-color: rgba(0,0,0,0.6);}
+
+.box_skills_2 .js {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.box_skills_2 .js:hover{width: 75%;background-color: rgba(0,0,0,0.6);}
+
+.box_skills_2 .JQuery {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.box_skills_2 .JQuery:hover{width:63%;background-color: rgba(0,0,0,0.6);}
+
+.box_skills_2 .PHP {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.box_skills_2 .PHP:hover{width: 45%;background-color: rgba(0,0,0,0.6);}
+
+.box_skills_2 .AJAX {width: 15%; background-color: rgba(255,255,255,0.6);transition: all 0.9s ease-in-out;}.box_skills_2 .AJAX:hover{width: 25%;background-color: rgba(0,0,0,0.6);}
+
+
+
+.S .info_x p{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    line-height: 2;
+}
+
+/* ============== Start Contact_Sabri ================== */
+.contact_Sabri{margin: 10px 0}
+
+.contact_Sabri article address {
+    color: #fff;
+    font-size: 18px;
+    line-height: 2
+}
+
+/* ----- Contact Form -------
+-----------------------------*/
+.contact_Sabri input[type="text"],.contact_Sabri input[type="email"],.contact_Sabri textarea {
+	background-color: rgba(0,0,0, .5);
+	width: 100%;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	direction: ltr;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+ 
+.contact_Sabri textarea{
+	height: auto;
+}
+
+.contact_Sabri .button_form {
+    color: #fff;
+    width: 700px;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	padding: 0 20px;
+	font-size: 20px;
+	font-weight: bold;
+    background-color: #333
+}
+
+.S footer {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
