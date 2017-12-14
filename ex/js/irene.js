@@ -51,11 +51,7 @@ function startCounters () {
 //Sticky Nav
 window.addEventListener('scroll', function () {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-<<<<<<< HEAD
-  if (scrollTop > 400) {
-=======
   if (scrollTop > 200) {
->>>>>>> refs/remotes/origin/master
     document.getElementsByTagName("nav")[0].classList.add("sticky-nav");
   } else {
     document.getElementsByTagName("nav")[0].classList.remove("sticky-nav");
