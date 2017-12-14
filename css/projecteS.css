@@ -1,0 +1,277 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.clear{
+    clear: both
+}
+
+.contianer {
+    width: 90%
+}
+
+.overlay {
+	background-color: rgba(000, 000, 000, .4);
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    background-color: #f5f7f8;
+    font-family: 'Muli', sans-serif
+}
+
+section {
+    margin: 100px 0
+}
+
+/* ============== Start Navbar ================== */
+nav {
+    background-color: #347486;
+    width: 100%;
+}
+
+nav img {
+    float: left;
+    width: 50px;
+    padding: 5px;  
+}
+
+
+/* ----- Ul ------
+----------------------------------*/
+nav ul {
+    list-style-type: none;
+    float: right
+}
+
+nav ul li  {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 2;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+
+/* ----- Hoverable Dropdown ------
+----------------------------------*/
+.dropbtn {
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #347486;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 28px
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 5px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #eee;color: #333}
+
+.dropbtn:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropbtn:hover {
+    background-color: #eee;
+    color: #347486
+}
+
+/* ============== Start Header ================== */
+header {
+    background-image: url(../images/designer-developer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    background-position: center;
+    width:  100%;
+    text-align: center;
+}
+
+header p{
+    line-height: 1;
+    color: #fff;
+    font-size: 80px;
+    padding-top:50px;
+    font-weight: bold;
+}
+
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 50px;
+    padding: 20px 0;
+    color: #347486
+}
+
+
+.team article{
+    float: left;
+    width: 25%
+}
+
+.team img{
+    width: 90%;
+    border: solid 10px #347486;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all .2s ease-in-out
+}.team img:hover {
+    transform: scaleY(1.1)scaleX(1.1)rotate(-10deg);
+    background-color: #347486
+}
+.team h3{
+    font-size: 30px;
+    padding: 10px 0;
+    color: #347486
+}
+.team p{
+    font-size: 20px;
+    padding: 10px 0
+}
+
+/* ============== Start contact ================== */
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 35px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #347486
+}
+
+.about p {
+    font-size: 22px;
+    color: #333
+}
+
+/* ============== Start contact ================== */
+.contact article {
+    float: left;
+    width: 33.333%;
+    text-align: center
+}
+
+.contact article address {
+    text-align: left;
+    line-height: 2;
+    color: #347486;
+    font-size: 18px
+}
+
+/* ----- Contact Form -------
+-----------------------------*/
+input[type="text"], input[type="email"], textarea {
+	background-color: white;
+	width: 80%;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	direction: ltr;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+ 
+textarea{
+	height: auto;
+}
+
+.button_form {
+    color: #fff;
+    width: 80%;
+	height: 40px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	margin: 5px 0;
+	padding: 0 20px;
+	font-size: 20px;
+	font-weight: bold;
+    background-color: #347486
+}
+
+
+/* ============== Start main ================== */
+footer {
+    background-color: #347486;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer p {
+    padding: 10px;
+    color: #fff
+}
+
+/* ============== Start Team Site ================== */
+.A article {
+    float: left;
+    width: 50%;
+    text-align: center
+}
+.A article span a i {
+    text-align: left
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
